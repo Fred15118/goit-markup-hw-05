@@ -454,7 +454,52 @@ footer{
     gap: 16px;
 }
 
+.footer__soc{
+    margin-right: 80px;
+}
+
 .social .soc__link:focus,
 .social .soc__link:hover{
     background-color: #31d0aa;
+}
+
+.footer__subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe__label{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.32px;
+}
+
+.subscribe__input{
+    margin-top: 16px;
+    width: 264px;
+    height: 40px;
+    background-color: #2E2F42;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.subscribe__btn{
+    height: 40px;
+    width: 165px;
+    background-color: #4d5ae5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.64px;
+    color:#fff;
+    align-self:last baseline;
 }
