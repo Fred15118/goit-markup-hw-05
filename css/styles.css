@@ -607,7 +607,7 @@ footer{
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__input:focus .input__svg{
+.modal__input:focus+.input__svg{
     fill: #4d5ae5;
 }
 
@@ -652,8 +652,16 @@ footer{
     margin-right: 8px;
 }
 
-.modal__span{
-    color: #8e8f99;
+.check__span{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
 }
 
 .modal__btn{
@@ -672,6 +680,7 @@ footer{
     border-radius: 4px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    margin: 0 auto; 
 }
 
 .close__btn{
@@ -702,4 +711,10 @@ footer{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: inherit;
     fill: currentColor;
+}
+
+.modal__checkbox:checked .check__span{
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
 }
