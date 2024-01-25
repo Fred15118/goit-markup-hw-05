@@ -639,6 +639,12 @@ footer{
     margin-bottom: 24px;
 }
 
+.modal__checkwrap .modal__label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .modal__pplink{
     color: #4d5ae5;
     text-decoration: underline;
@@ -649,7 +655,6 @@ footer{
 .modal__checkbox{
     width: 16px;
     height: 16px;
-    margin-right: 8px;
 }
 
 .modal__checkbox:checked + .modal__label > .check__span {
@@ -668,6 +673,7 @@ footer{
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .modal__btn{
